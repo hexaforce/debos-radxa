@@ -1,6 +1,5 @@
 #Deploy the filesystem to an image
-  - action: filesystem-deploy
-    description: Deploying filesystem onto image
-    setup-fstab: true
-    setup-kernel-cmdline: true
-
+- action: filesystem-deploy
+  description: Deploying filesystem onto image
+  setup-fstab: true
+  setup-kernel-cmdline: true

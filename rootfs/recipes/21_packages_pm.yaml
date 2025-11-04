@@ -1,5 +1,3 @@
-  - action: apt
-    description: Power management
-    packages: [
-        pm-utils, triggerhappy ]
-
+- action: apt
+  description: Power management
+  packages: [pm-utils, triggerhappy]

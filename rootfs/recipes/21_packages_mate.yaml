@@ -1,6 +1,11 @@
-  - action: apt
-    description: Mate
-    packages: [
-        ubuntu-minimal, ubuntu-mate-core, ubuntu-mate-desktop,
-        ubuntu-mate-lightdm-theme, ubuntu-mate-wallpapers-xenial, lightdm ]
-
+- action: apt
+  description: Mate
+  packages:
+    [
+      ubuntu-minimal,
+      ubuntu-mate-core,
+      ubuntu-mate-desktop,
+      ubuntu-mate-lightdm-theme,
+      ubuntu-mate-wallpapers-xenial,
+      lightdm,
+    ]

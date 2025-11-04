@@ -1,8 +1,7 @@
-  - action: run
-    description: Do nothing
-    chroot: true
-    command: |
-      set -e
+- action: run
+  description: Do nothing
+  chroot: true
+  command: |
+    set -e
 
-      echo "Nothing"
-
+    echo "Nothing"

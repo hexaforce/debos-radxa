@@ -1,6 +1,13 @@
-  - action: apt
-    description: Xfce
-    packages: [
-        xfce4, xfce4-goodies, task-xfce-desktop, lightdm, dialog,
-        tango-icon-theme, light-locker, at-spi2-core ]
-
+- action: apt
+  description: Xfce
+  packages:
+    [
+      xfce4,
+      xfce4-goodies,
+      task-xfce-desktop,
+      lightdm,
+      dialog,
+      tango-icon-theme,
+      light-locker,
+      at-spi2-core,
+    ]

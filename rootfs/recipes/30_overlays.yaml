@@ -1,4 +1,3 @@
-  - action: overlay
-    source: overlays/
-    destination: /
-
+- action: overlay
+  source: overlays/
+  destination: /

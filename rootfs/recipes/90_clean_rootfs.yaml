@@ -1,4 +1,3 @@
-  - action: run
-    chroot: true
-    script: scripts/clean_rootfs.sh
-
+- action: run
+  chroot: true
+  script: scripts/clean_rootfs.sh

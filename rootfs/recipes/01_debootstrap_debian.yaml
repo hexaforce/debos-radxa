@@ -1,7 +1,6 @@
 actions:
   - action: debootstrap
-    suite: {{$suite}}
-    components: [ main, contrib, non-free ]
+    suite: { { $suite } }
+    components: [main, contrib, non-free]
     variant: minbase
     mirror: https://deb.debian.org/debian
-

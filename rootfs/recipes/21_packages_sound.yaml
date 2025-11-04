@@ -1,6 +1,3 @@
-  - action: apt
-    description: Sound
-    packages: [
-        pulseaudio-module-bluetooth, pulseaudio, alsa-utils,
-        pavucontrol ]
-
+- action: apt
+  description: Sound
+  packages: [pulseaudio-module-bluetooth, pulseaudio, alsa-utils, pavucontrol]

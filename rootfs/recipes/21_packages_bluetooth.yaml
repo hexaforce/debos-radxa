@@ -1,5 +1,3 @@
-  - action: apt
-    description: Bluetooth
-    packages: [
-        blueman, bluez ]
-
+- action: apt
+  description: Bluetooth
+  packages: [blueman, bluez]

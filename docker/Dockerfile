@@ -1,8 +1,19 @@
-FROM debian:bullseye
+FROM debian:bookworm
 
-RUN echo "deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main non-free contrib" > /etc/apt/sources.list
-RUN echo "deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main non-free contrib" >> /etc/apt/sources.list
-RUN echo "deb http://mirrors.tuna.tsinghua.edu.cn/debian-security/ bullseye-security main non-free contrib" >> /etc/apt/sources.list
+# 日本のミラーサーバを使用（セキュリティは公式を使用）
+RUN echo "deb http://ftp.jaist.ac.jp/pub/Linux/debian/ bookworm main non-free-firmware non-free contrib" > /etc/apt/sources.list && \
+    echo "deb http://ftp.jaist.ac.jp/pub/Linux/debian/ bookworm-updates main non-free-firmware non-free contrib" >> /etc/apt/sources.list && \
+    echo "deb http://security.debian.org/debian-security bookworm-security main non-free-firmware non-free contrib" >> /etc/apt/sources.list
+
+# オプション2: 理化学研究所 (RIKEN) - 高速で安定
+# RUN echo "deb http://ftp.riken.jp/Linux/debian/ bookworm main non-free-firmware non-free contrib" > /etc/apt/sources.list && \
+#     echo "deb http://ftp.riken.jp/Linux/debian/ bookworm-updates main non-free-firmware non-free contrib" >> /etc/apt/sources.list && \
+#     echo "deb http://ftp.riken.jp/Linux/debian-security/ bookworm-security main non-free-firmware non-free contrib" >> /etc/apt/sources.list
+
+# オプション3: IIJ (Internet Initiative Japan)
+# RUN echo "deb http://ftp.jp.debian.org/debian/ bookworm main non-free-firmware non-free contrib" > /etc/apt/sources.list && \
+#     echo "deb http://ftp.jp.debian.org/debian/ bookworm-updates main non-free-firmware non-free contrib" >> /etc/apt/sources.list && \
+#     echo "deb http://ftp.jp.debian.org/debian-security/ bookworm-security main non-free-firmware non-free contrib" >> /etc/apt/sources.list
 
 RUN apt-get update -y && apt-get -y --allow-unauthenticated install debos \
     xz-utils dosfstools libterm-readkey-perl user-mode-linux libslirp-helper \

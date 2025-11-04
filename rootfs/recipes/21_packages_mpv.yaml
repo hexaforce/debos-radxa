@@ -1,5 +1,3 @@
-  - action: apt
-    description: Mpv
-    packages: [
-        libmpv1, mpv ]
-
+- action: apt
+  description: Mpv
+  packages: [libmpv1, mpv]

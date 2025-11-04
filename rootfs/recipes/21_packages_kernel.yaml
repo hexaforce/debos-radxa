@@ -31,16 +31,10 @@
     packages: [
 {{ if eq $cpu "rk3566" }}
         linux-4.19-rock-3-latest
-{{ else if eq $cpu "rk3568" }}
-        linux-4.19-rock-3-latest
 {{ else if eq $cpu "rk3588" }}
-        linux-5.10-rock-5-latest
+        linux-6.1-rock-5-latest
 {{ else if eq $cpu "rk3588s" }}
-        linux-5.10-rock-5-latest
-{{ else if eq $cpu "s905y2" }}
-        linux-5.10-radxa-zero-latest
-{{ else if eq $cpu "a311d" }}
-        linux-5.10-radxa-zero-latest
+        linux-6.1-rock-5-latest
 {{ end }}
         ]
 

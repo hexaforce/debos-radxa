@@ -1,4 +1,3 @@
-  - action: run
-    chroot: true
-    script: scripts/fix_uenv.sh {{$board}}
-
+- action: run
+  chroot: true
+  script: scripts/fix_uenv.sh {{$board}}

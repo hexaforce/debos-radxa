@@ -1,4 +1,3 @@
-  - action: run
-    chroot: true
-    script: scripts/preinstall_tb_package.sh
-
+- action: run
+  chroot: true
+  script: scripts/preinstall_tb_package.sh

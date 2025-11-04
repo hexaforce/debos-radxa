@@ -1,5 +1,3 @@
-  - action: apt
-    description: Math
-    packages: [
-        bc ]
-
+- action: apt
+  description: Math
+  packages: [bc]

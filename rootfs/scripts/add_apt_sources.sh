@@ -39,7 +39,7 @@ deb http://security.debian.org/ ${SUITE}/updates main contrib non-free
 EOF
 ;;
 
-bullseye)
+bookworm)
 cat <<-EOF > /etc/apt/sources.list
 deb http://${DEBIAN_MIRROR} ${SUITE} main contrib non-free
 #deb-src http://${DEBIAN_MIRROR} ${SUITE} main contrib non-free

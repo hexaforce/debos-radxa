@@ -17,7 +17,7 @@ usage() {
     echo "====USAGE: build.sh -c <cpu> -b <board> -m <model> -d <distro>  -v <variant> -a <arch> -f <format> [-0]===="
     echo "Specify -0 to disable debug-shell, useful for automated build."
     echo "Examples:"
-    echo "  ./build.sh -c rk3588 -b rock-5b -m debian -d bullseye -v xfce4 -a arm64 -f gpt"
+    echo "  ./build.sh -c rk3588 -b rock-5b -m debian -d bookworm -v xfce4 -a arm64 -f gpt"
     echo "  ./build.sh -c a311d -b radxa-zero2 -m ubuntu -d focal -v server -a arm64 -f mbr"
 }
 

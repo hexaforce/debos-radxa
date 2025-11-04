@@ -1,5 +1,3 @@
-  - action: apt
-    description: Ubuntu Web
-    packages: [
-        chromium-browser, firefox, curl ]
-
+- action: apt
+  description: Ubuntu Web
+  packages: [chromium-browser, firefox, curl]
