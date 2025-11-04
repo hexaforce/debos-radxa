@@ -1,6 +1,6 @@
 - action: image-partition
   imagename: system.img
-  imagesize: { { $imagesize } }
+  imagesize: {{ $imagesize }}
   partitiontype: gpt
   mountpoints:
     - mountpoint: /
@@ -12,9 +12,9 @@
     - name: boot
       fs: fat32
       start: 32768S
-      end: { { $bootpartitionend } }
+      end: {{ $bootpartitionend }}
       flags: [boot, esp]
     - name: rootfs
       fs: ext4
-      start: { { $rootpartitionstart } }
+      start: {{ $rootpartitionstart }}
       end: 100%

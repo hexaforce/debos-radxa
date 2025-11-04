@@ -1,6 +1,6 @@
 actions:
   - action: debootstrap
-    suite: { { $suite } }
+    suite: {{ $suite }}
     components: [main, restricted, universe, multiverse]
     variant: minbase
     mirror: http://ports.ubuntu.com/ubuntu-ports/
